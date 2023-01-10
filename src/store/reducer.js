@@ -19,8 +19,10 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 episodes: action.payload
             }
+        default:
+            return state;
     }
-    return state;
+
 
 }
 
